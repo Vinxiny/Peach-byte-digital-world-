@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Peach Byte Digital World — Turning ideas into working digital solutions. Professional websites, custom software, business tools, automation and AI-powered systems. Based in Fredericton, New Brunswick, Canada." />
+  <meta name="keywords" content="website development, custom software, business applications, digital solutions, AI automation, Peach Byte, Fredericton" />
+  <meta name="author" content="Peach Byte Digital World" />
+  <meta property="og:title" content="Peach Byte Digital World — Ideas into Working Digital Solutions" />
+  <meta property="og:description" content="From professional websites to custom software and intelligent business tools, we build digital solutions that help businesses work smarter and grow." />
+  <meta property="og:image" content="/logo.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#FF7A45" />
+  <title>Peach Byte Digital World | Turning Ideas into Working Apps & Software</title>
+  <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            peach: {
+              50: '#FFF7F2',
+              100: '#FFEDE3',
+              200: '#FFD9C7',
+              300: '#FFB894',
+              400: '#FF9460',
+              500: '#FF7A45',
+              600: '#F55A2A',
+              700: '#D9431A',
+              800: '#B43516',
+              900: '#942E17',
+            },
+            coral: {
+              400: '#FF6B4A',
+              500: '#FF5A38',
+            },
+            leaf: {
+              400: '#4ADE80',
+              500: '#22C55E',
+              600: '#16A34A',
+            },
+            navy: {
+              700: '#1E293B',
+              800: '#0F172A',
+              900: '#0B1220',
+            },
+            warm: {
+              50: '#FDFBF8',
+              100: '#FAF7F2',
+            }
+          },
+          fontFamily: {
+            display: ['Outfit', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'glass': '0 8px 32px rgba(15, 23, 42, 0.06), 0 2px 8px rgba(15, 23, 42, 0.04)',
+            'glass-lg': '0 20px 50px rgba(15, 23, 42, 0.08), 0 8px 20px rgba(15, 23, 42, 0.05)',
+            'peach': '0 12px 40px rgba(255, 122, 69, 0.25)',
+            'float': '0 25px 50px -12px rgba(15, 23, 42, 0.12)',
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'float-slow': 'float 8s ease-in-out infinite',
+            'pulse-soft': 'pulse-soft 3s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' },
+            },
+            'pulse-soft': {
+              '0%, 100%': { opacity: '1' },
+              '50%': { opacity: '0.85' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="font-body bg-warm-50 text-navy-800 antialiased overflow-x-hidden">
+  <!-- Navigation -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <a href="#hero" class="flex items-center gap-3 group">
+          <img src="/logo.jpg" alt="Peach Byte Digital World" class="h-10 w-10 sm:h-11 sm:w-11 object-contain rounded-lg shadow-sm group-hover:scale-105 transition-transform" />
+          <div class="leading-tight">
+            <span class="font-display font-bold text-navy-800 text-lg sm:text-xl tracking-tight">PEACH BYTE</span>
+            <span class="block text-[10px] sm:text-xs font-medium text-navy-700/70 tracking-widest uppercase">Digital World</span>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#products" class="nav-link">Products</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#about" class="nav-link">About</a>
+        </nav>
+        <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20visited%20your%20website%20and%20would%20like%20to%20discuss%20a%20digital%20solution%20for%20my%20business." 
+           target="_blank" rel="noopener noreferrer"
+           class="btn-primary text-sm sm:text-base px-4 sm:px-6 py-2.5 sm:py-3">
+          Discuss Your Project
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+    <!-- Soft background shapes -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-20 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-peach-100/60 via-peach-50/30 to-transparent rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-leaf-400/10 via-transparent to-transparent rounded-full blur-3xl"></div>
+      <!-- Floating digital cubes inspired by logo -->
+      <div class="cube cube-1"></div>
+      <div class="cube cube-2"></div>
+      <div class="cube cube-3"></div>
+      <div class="cube cube-4"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 w-full relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="max-w-xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/80 border border-peach-200/60 shadow-sm mb-6">
+            <span class="w-2 h-2 rounded-full bg-leaf-500 animate-pulse"></span>
+            <span class="text-xs font-medium text-navy-700 tracking-wide">Fredericton · New Brunswick · Canada</span>
+          </div>
+          <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.1] tracking-tight text-navy-900 mb-5">
+            Turning Ideas Into<br />
+            <span class="text-peach-500">Working Digital</span><br />
+            Solutions
+          </h1>
+          <p class="text-lg sm:text-xl text-navy-700/80 leading-relaxed mb-8 max-w-lg">
+            From professional websites to custom software and intelligent business tools, we build digital solutions that help businesses work smarter and grow.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20visited%20your%20website%20and%20would%20like%20to%20discuss%20a%20digital%20solution%20for%20my%20business." 
+               target="_blank" rel="noopener noreferrer"
+               class="btn-primary text-base px-7 py-3.5 shadow-peach">
+              Discuss Your Project
+            </a>
+            <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20would%20like%20to%20explore%20your%20digital%20solutions%20for%20my%20business." 
+               target="_blank" rel="noopener noreferrer"
+               class="btn-secondary text-base px-7 py-3.5">
+              Explore Our Solutions
+            </a>
+          </div>
+          <p class="mt-6 text-sm text-navy-700/60 flex items-center gap-2">
+            <svg class="w-4 h-4 text-leaf-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            WhatsApp is our single enquiry channel — fast replies, real conversations.
+          </p>
+        </div>
+
+        <!-- 3D Visual -->
+        <div class="relative flex justify-center lg:justify-end">
+          <div class="relative w-full max-w-md aspect-square">
+            <!-- Glass dashboard mockup -->
+            <div class="absolute inset-4 sm:inset-6 glass-panel rounded-3xl p-5 sm:p-6 animate-float-slow">
+              <div class="flex items-center gap-2 mb-4">
+                <div class="w-3 h-3 rounded-full bg-peach-400"></div>
+                <div class="w-3 h-3 rounded-full bg-leaf-400"></div>
+                <div class="w-3 h-3 rounded-full bg-navy-700/20"></div>
+                <span class="ml-2 text-xs font-medium text-navy-700/50">Business Dashboard</span>
+              </div>
+              <div class="space-y-3">
+                <div class="h-3 bg-peach-100 rounded-full w-3/4"></div>
+                <div class="h-3 bg-navy-700/10 rounded-full w-full"></div>
+                <div class="grid grid-cols-3 gap-2 mt-4">
+                  <div class="h-16 rounded-xl bg-gradient-to-br from-peach-100 to-peach-50 border border-peach-200/50"></div>
+                  <div class="h-16 rounded-xl bg-gradient-to-br from-leaf-400/20 to-leaf-400/5 border border-leaf-400/20"></div>
+                  <div class="h-16 rounded-xl bg-gradient-to-br from-navy-700/10 to-navy-700/5 border border-navy-700/10"></div>
+                </div>
+                <div class="h-24 rounded-xl bg-white/60 border border-white/80 mt-3 flex items-center justify-center">
+                  <div class="text-center">
+                    <div class="text-2xl font-display font-bold text-peach-500">+128%</div>
+                    <div class="text-[10px] text-navy-700/50 uppercase tracking-wider">Efficiency</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Floating logo badge -->
+            <div class="absolute -bottom-2 -left-2 sm:bottom-4 sm:left-0 glass-panel rounded-2xl p-3 shadow-float animate-float">
+              <img src="/logo.jpg" alt="" class="w-14 h-14 object-contain rounded-xl" />
+            </div>
+            <!-- Floating cubes -->
+            <div class="absolute top-8 -right-2 w-10 h-10 bg-gradient-to-br from-peach-400 to-coral-400 rounded-lg shadow-peach rotate-12 opacity-90"></div>
+            <div class="absolute bottom-20 -right-4 w-7 h-7 bg-gradient-to-br from-peach-300 to-peach-200 rounded-md shadow-md -rotate-6 opacity-80"></div>
+            <div class="absolute top-1/3 -left-4 w-6 h-6 bg-white border border-peach-200 rounded shadow-sm rotate-45"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 sm:py-28 bg-white relative">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl mb-14">
+        <p class="text-peach-500 font-semibold text-sm tracking-widest uppercase mb-3">What We Build</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-navy-900 tracking-tight mb-4">Digital solutions that solve real business problems</h2>
+        <p class="text-navy-700/75 text-lg leading-relaxed">Every product and system we create is designed to remove friction, save time, and help your business operate with clarity.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <!-- Website Development -->
+        <article class="service-card group">
+          <div class="service-icon bg-peach-50 text-peach-500 group-hover:bg-peach-500 group-hover:text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="font-display font-bold text-xl text-navy-900 mb-2">Website Development</h3>
+          <p class="text-navy-700/70 text-sm leading-relaxed mb-4">Professional websites that establish credibility, convert visitors, and support your brand online.</p>
+          <ul class="space-y-1.5 text-sm text-navy-700/80 mb-5">
+            <li class="flex items-start gap-2"><span class="text-peach-400 mt-0.5">▹</span> Business & corporate websites</li>
+            <li class="flex items-start gap-2"><span class="text-peach-400 mt-0.5">▹</span> Ecommerce & booking platforms</li>
+            <li class="flex items-start gap-2"><span class="text-peach-400 mt-0.5">▹</span> Landing pages & Progressive Web Apps</li>
+          </ul>
+          <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20am%20interested%20in%20Website%20Development%20for%20my%20business." 
+             target="_blank" rel="noopener noreferrer" class="service-cta">
+            Request a Website →
+          </a>
+        </article>
+
+        <!-- Custom Software -->
+        <article class="service-card group">
+          <div class="service-icon bg-peach-50 text-peach-500 group-hover:bg-peach-500 group-hover:text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          </div>
+          <h3 class="font-display font-bold text-xl text-navy-900 mb-2">Custom Software</h3>
+          <p class="text-navy-700/70 text-sm leading-relaxed mb-4">Purpose-built applications that match the way your team actually works — not the other way around.</p>
+          <ul class="space-y-1.5 text-sm text-navy-700/80 mb-5">
+            <li class="flex items-start gap-2"><span class="text-peach-400 mt-0.5">▹</span> Management systems & dashboards</li>
+            <li class="flex items-start gap-2"><span class="text-peach-400 mt-0.5">▹</span> Client portals & inventory systems</li>
+            <li class="flex items-start gap-2"><span class="text-peach-400 mt-0.5">▹</span> Booking management & custom apps</li>
+          </ul>
+          <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20would%20like%20to%20build%20Custom%20Software%20for%20my%20business." 
+             target="_blank" rel="noopener noreferrer" class="service-cta">
+            Build Custom Software →
+          </a>
+        </article>
+
+        <!-- Business Tools -->
+        <article class="service-card group">
+          <div class="service-icon bg-peach-50 text-peach-500 group-hover:bg-peach-500 group-hover:text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+          </div>
+          <h3 class="font-display font-bold text-xl text-navy-900 mb-2">Business Tools</h3>
+          <p class="text-navy-700/70 text-sm leading-relaxed mb-4">Lightweight tools that replace spreadsheets and manual processes with clear, reliable systems.</p>
+          <ul class="space-y-1.5 text-sm text-navy-700/80 mb-5">
+            <li class="flex items-start gap-2"><span class="text-peach-400 mt-0.5">▹</span> Productivity & reporting applications</li>
+            <li class="flex items-start gap-2"><span class="text-peach-400 mt-0.5">▹</span> Business calculators & CRM tools</li>
+            <li class="flex items-start gap-2"><span class="text-peach-400 mt-0.5">▹</span> Digital administration systems</li>
+          </ul>
+          <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20need%20a%20Business%20Tool%20for%20my%20operations." 
+             target="_blank" rel="noopener noreferrer" class="service-cta">
+            Get a Business Tool →
+          </a>
+        </article>
+
+        <!-- Automation & AI -->
+        <article class="service-card group">
+          <div class="service-icon bg-peach-50 text-peach-500 group-hover:bg-peach-500 group-hover:text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="font-display font-bold text-xl text-navy-900 mb-2">Automation & AI</h3>
+          <p class="text-navy-700/70 text-sm leading-relaxed mb-4">Intelligent systems that handle repetitive work so your team can focus on higher-value decisions.</p>
+          <ul class="space-y-1.5 text-sm text-navy-700/80 mb-5">
+            <li class="flex items-start gap-2"><span class="text-peach-400 mt-0.5">▹</span> Workflow automation & integrations</li>
+            <li class="flex items-start gap-2"><span class="text-peach-400 mt-0.5">▹</span> AI-assisted customer enquiry systems</li>
+            <li class="flex items-start gap-2"><span class="text-peach-400 mt-0.5">▹</span> Data processing & intelligent tools</li>
+          </ul>
+          <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20am%20interested%20in%20Automation%20and%20AI%20solutions%20for%20my%20business." 
+             target="_blank" rel="noopener noreferrer" class="service-cta">
+            Explore Automation →
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Products -->
+  <section id="products" class="py-20 sm:py-28 bg-warm-100/60 relative">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl mb-14">
+        <p class="text-peach-500 font-semibold text-sm tracking-widest uppercase mb-3">Digital Products</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-navy-900 tracking-tight mb-4">Ready-to-adapt solutions</h2>
+        <p class="text-navy-700/75 text-lg leading-relaxed">A growing catalogue of practical products. Each one is designed to solve a specific operational need and can be tailored to your business.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-preview bg-gradient-to-br from-peach-50 to-white">
+            <div class="w-full h-full flex flex-col p-4">
+              <div class="flex gap-1.5 mb-3">
+                <div class="w-2 h-2 rounded-full bg-peach-400"></div>
+                <div class="w-2 h-2 rounded-full bg-leaf-400"></div>
+                <div class="w-2 h-2 rounded-full bg-navy-700/20"></div>
+              </div>
+              <div class="flex-1 space-y-2">
+                <div class="h-2 bg-peach-200/60 rounded w-2/3"></div>
+                <div class="h-2 bg-navy-700/10 rounded w-full"></div>
+                <div class="grid grid-cols-2 gap-2 mt-3">
+                  <div class="h-12 rounded-lg bg-white border border-peach-100"></div>
+                  <div class="h-12 rounded-lg bg-white border border-peach-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-display font-bold text-lg text-navy-900">Client Portal Pro</h3>
+              <span class="text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-leaf-400/15 text-leaf-600">Demo</span>
+            </div>
+            <p class="text-sm text-navy-700/70 mb-3 leading-relaxed">Secure client-facing portal for document sharing, status updates, and communication.</p>
+            <p class="text-xs text-navy-700/50 mb-4"><strong class="text-navy-700/70">Solves:</strong> Scattered email threads and lost files.</p>
+            <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20would%20like%20to%20explore%20Client%20Portal%20Pro." 
+               target="_blank" rel="noopener noreferrer" class="product-cta">Explore →</a>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-preview bg-gradient-to-br from-navy-700/5 to-white">
+            <div class="w-full h-full flex flex-col p-4">
+              <div class="flex gap-1.5 mb-3">
+                <div class="w-2 h-2 rounded-full bg-peach-400"></div>
+                <div class="w-2 h-2 rounded-full bg-leaf-400"></div>
+                <div class="w-2 h-2 rounded-full bg-navy-700/20"></div>
+              </div>
+              <div class="flex-1 space-y-2">
+                <div class="h-8 rounded-lg bg-peach-100/80 flex items-center px-3">
+                  <div class="h-2 bg-peach-400/40 rounded w-1/2"></div>
+                </div>
+                <div class="space-y-1.5">
+                  <div class="h-2 bg-navy-700/10 rounded w-full"></div>
+                  <div class="h-2 bg-navy-700/10 rounded w-4/5"></div>
+                  <div class="h-2 bg-navy-700/10 rounded w-3/5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-display font-bold text-lg text-navy-900">Ops Dashboard</h3>
+              <span class="text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-leaf-400/15 text-leaf-600">Demo</span>
+            </div>
+            <p class="text-sm text-navy-700/70 mb-3 leading-relaxed">Real-time operational overview with key metrics, alerts, and team performance.</p>
+            <p class="text-xs text-navy-700/50 mb-4"><strong class="text-navy-700/70">Solves:</strong> Blind spots in daily operations.</p>
+            <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20would%20like%20to%20explore%20Ops%20Dashboard." 
+               target="_blank" rel="noopener noreferrer" class="product-cta">Explore →</a>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-preview bg-gradient-to-br from-peach-50/80 to-white">
+            <div class="w-full h-full flex flex-col p-4">
+              <div class="flex gap-1.5 mb-3">
+                <div class="w-2 h-2 rounded-full bg-peach-400"></div>
+                <div class="w-2 h-2 rounded-full bg-leaf-400"></div>
+                <div class="w-2 h-2 rounded-full bg-navy-700/20"></div>
+              </div>
+              <div class="flex-1 grid grid-cols-3 gap-1.5 content-start">
+                <div class="h-10 rounded bg-white border border-peach-100"></div>
+                <div class="h-10 rounded bg-peach-100/50 border border-peach-100"></div>
+                <div class="h-10 rounded bg-white border border-peach-100"></div>
+                <div class="h-10 rounded bg-white border border-peach-100 col-span-2"></div>
+                <div class="h-10 rounded bg-leaf-400/10 border border-leaf-400/20"></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-display font-bold text-lg text-navy-900">Booking Manager</h3>
+              <span class="text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-leaf-400/15 text-leaf-600">Demo</span>
+            </div>
+            <p class="text-sm text-navy-700/70 mb-3 leading-relaxed">Appointment and resource scheduling with automated reminders and calendar sync.</p>
+            <p class="text-xs text-navy-700/50 mb-4"><strong class="text-navy-700/70">Solves:</strong> Double-bookings and manual scheduling chaos.</p>
+            <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20would%20like%20to%20explore%20Booking%20Manager." 
+               target="_blank" rel="noopener noreferrer" class="product-cta">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center">
+        <p class="text-sm text-navy-700/60 mb-4">Need something specific? We design and build custom products around your exact workflow.</p>
+        <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20have%20a%20custom%20product%20idea%20I%20would%20like%20to%20discuss." 
+           target="_blank" rel="noopener noreferrer" class="btn-secondary inline-flex">
+          Discuss a Custom Product
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-20 sm:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl mb-14">
+        <p class="text-peach-500 font-semibold text-sm tracking-widest uppercase mb-3">Selected Work</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-navy-900 tracking-tight mb-4">Interfaces that work</h2>
+        <p class="text-navy-700/75 text-lg leading-relaxed">Demonstrations of the quality and clarity we bring to every interface — websites, dashboards, and applications.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <div class="portfolio-item group">
+          <div class="portfolio-visual bg-gradient-to-br from-warm-100 to-peach-50">
+            <div class="absolute inset-6 glass-panel rounded-2xl p-4 opacity-90 group-hover:opacity-100 transition-opacity">
+              <div class="h-3 w-24 bg-peach-200 rounded mb-3"></div>
+              <div class="space-y-2">
+                <div class="h-2 bg-navy-700/10 rounded w-full"></div>
+                <div class="h-2 bg-navy-700/10 rounded w-5/6"></div>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                  <div class="h-20 rounded-xl bg-white/80 border border-white"></div>
+                  <div class="h-20 rounded-xl bg-white/80 border border-white"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h3 class="font-display font-semibold text-lg text-navy-900">Operations Control Interface</h3>
+            <p class="text-sm text-navy-700/60 mt-1">Dashboard · Custom Software Demonstration</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item group">
+          <div class="portfolio-visual bg-gradient-to-br from-navy-800/5 to-warm-100">
+            <div class="absolute inset-6 glass-panel rounded-2xl p-4 opacity-90 group-hover:opacity-100 transition-opacity">
+              <div class="flex justify-between items-center mb-4">
+                <div class="h-3 w-20 bg-peach-200 rounded"></div>
+                <div class="h-6 w-16 rounded-full bg-leaf-400/20"></div>
+              </div>
+              <div class="space-y-3">
+                <div class="h-10 rounded-lg bg-white/70 border border-white flex items-center px-3">
+                  <div class="h-2 bg-navy-700/15 rounded w-1/3"></div>
+                </div>
+                <div class="h-10 rounded-lg bg-white/70 border border-white flex items-center px-3">
+                  <div class="h-2 bg-navy-700/15 rounded w-1/2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h3 class="font-display font-semibold text-lg text-navy-900">Professional Services Website</h3>
+            <p class="text-sm text-navy-700/60 mt-1">Website · Corporate Presence Demonstration</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20would%20like%20to%20discuss%20a%20project%20similar%20to%20your%20portfolio%20work." 
+           target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Start a Similar Project
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / CTA -->
+  <section id="about" class="py-20 sm:py-28 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-warm-50 via-white to-peach-50/30"></div>
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 relative z-10 text-center">
+      <img src="/logo.jpg" alt="Peach Byte Digital World" class="w-20 h-20 mx-auto mb-6 object-contain rounded-2xl shadow-glass" />
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-navy-900 tracking-tight mb-4">
+        I turn ideas into working apps and softwares.
+      </h2>
+      <p class="text-lg text-navy-700/75 leading-relaxed max-w-2xl mx-auto mb-8">
+        Peach Byte Digital World is a digital solutions company based in Fredericton, New Brunswick, Canada. We design and build professional websites, custom software, business tools, and intelligent automation systems that help organisations work with greater clarity and efficiency.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20visited%20your%20website%20and%20would%20like%20to%20discuss%20a%20digital%20solution%20for%20my%20business." 
+           target="_blank" rel="noopener noreferrer"
+           class="btn-primary text-base px-8 py-4 shadow-peach">
+          Discuss Your Project on WhatsApp
+        </a>
+        <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20have%20a%20question%20about%20your%20services." 
+           target="_blank" rel="noopener noreferrer"
+           class="btn-secondary text-base px-8 py-4">
+          Ask a Question
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-navy-700/5 pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-1">
+          <a href="#hero" class="flex items-center gap-2.5 mb-4">
+            <img src="/logo.jpg" alt="Peach Byte" class="h-9 w-9 object-contain rounded-lg" />
+            <div>
+              <span class="font-display font-bold text-navy-900 text-base block leading-none">PEACH BYTE</span>
+              <span class="text-[10px] text-navy-700/60 tracking-wider uppercase">Digital World</span>
+            </div>
+          </a>
+          <p class="text-sm text-navy-700/65 leading-relaxed">
+            Turning ideas into working digital solutions. Websites, software, tools, and intelligent systems.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-display font-semibold text-navy-900 text-sm mb-4">Services</h4>
+          <ul class="space-y-2.5 text-sm text-navy-700/70">
+            <li><a href="#services" class="hover:text-peach-500 transition-colors">Website Development</a></li>
+            <li><a href="#services" class="hover:text-peach-500 transition-colors">Custom Software</a></li>
+            <li><a href="#services" class="hover:text-peach-500 transition-colors">Business Tools</a></li>
+            <li><a href="#services" class="hover:text-peach-500 transition-colors">Automation & AI</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display font-semibold text-navy-900 text-sm mb-4">Products</h4>
+          <ul class="space-y-2.5 text-sm text-navy-700/70">
+            <li><a href="#products" class="hover:text-peach-500 transition-colors">Client Portal Pro</a></li>
+            <li><a href="#products" class="hover:text-peach-500 transition-colors">Ops Dashboard</a></li>
+            <li><a href="#products" class="hover:text-peach-500 transition-colors">Booking Manager</a></li>
+            <li><a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20would%20like%20to%20discuss%20a%20custom%20product." target="_blank" rel="noopener noreferrer" class="hover:text-peach-500 transition-colors">Custom Product</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display font-semibold text-navy-900 text-sm mb-4">Contact</h4>
+          <p class="text-sm text-navy-700/70 mb-4">Fredericton, New Brunswick<br />Canada</p>
+          <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20visited%20your%20website%20and%20would%20like%20to%20discuss%20a%20digital%20solution%20for%20my%20business." 
+             target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 text-sm font-medium text-peach-500 hover:text-peach-600 transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp +1 226 480 7116
+          </a>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-navy-700/5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-navy-700/50">© 2026 Peach Byte Digital World. All rights reserved.</p>
+        <p class="text-xs text-navy-700/50">I turn ideas into working apps and softwares.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/12264807116?text=Hello%20Peach%20Byte%20Digital%20World.%20I%20visited%20your%20website%20and%20would%20like%20to%20discuss%20a%20digital%20solution%20for%20my%20business." 
+     target="_blank" rel="noopener noreferrer"
+     class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="/main.js"></script>
+</body>
+</html>
