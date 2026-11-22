@@ -1,0 +1,262 @@
+/* Peach Byte Digital World — Premium 3D brand styles */
+
+:root {
+  --peach: #FF7A45;
+  --peach-dark: #F55A2A;
+  --navy: #0F172A;
+}
+
+html { scroll-behavior: smooth; }
+
+/* Navbar */
+#navbar {
+  background: rgba(253, 251, 248, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid transparent;
+}
+#navbar.scrolled {
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom-color: rgba(15, 23, 42, 0.06);
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.04);
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(15, 23, 42, 0.68);
+  transition: color 0.2s;
+}
+.nav-link:hover { color: var(--peach); }
+
+/* Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', system-ui, sans-serif;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #FF7A45 0%, #FF5A38 100%);
+  border-radius: 9999px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(255, 122, 69, 0.32);
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(255, 122, 69, 0.42);
+  background: linear-gradient(135deg, #FF8A55 0%, #FF6A48 100%);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--navy);
+  background: white;
+  border: 1.5px solid rgba(15, 23, 42, 0.12);
+  border-radius: 9999px;
+  transition: all 0.25s ease;
+}
+.btn-secondary:hover {
+  border-color: var(--peach);
+  color: var(--peach);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+/* Hero peach image — maximum clarity */
+.peach-hero-img {
+  filter: drop-shadow(0 32px 48px rgba(255, 122, 69, 0.22));
+}
+
+/* Glass chips around peach */
+.glass-chip {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 0.55rem 0.85rem;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+/* Service cards */
+.service-card {
+  background: white;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 1.25rem;
+  padding: 1.6rem 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+}
+.service-card:hover {
+  border-color: rgba(255, 122, 69, 0.22);
+  box-shadow: 0 18px 44px rgba(15, 23, 42, 0.07);
+  transform: translateY(-3px);
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF1EA;
+  color: var(--peach);
+  transition: all 0.3s ease;
+}
+.service-card:hover .service-icon {
+  background: var(--peach);
+  color: white;
+}
+
+.service-cta {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--peach);
+  transition: color 0.2s;
+}
+.service-cta:hover { color: var(--peach-dark); }
+
+/* Product cards + realistic mock windows */
+.product-card {
+  background: white;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+}
+.product-card:hover {
+  border-color: rgba(255, 122, 69, 0.18);
+  box-shadow: 0 18px 44px rgba(15, 23, 42, 0.07);
+  transform: translateY(-3px);
+}
+
+.product-preview {
+  height: 160px;
+  background: linear-gradient(160deg, #FFF8F4 0%, #FAF7F2 100%);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mock-window {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.mock-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.45rem 0.7rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+}
+.mock-titlebar .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.mock-title {
+  margin-left: 0.4rem;
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(15, 23, 42, 0.4);
+}
+
+.badge-demo {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 9999px;
+  background: rgba(34, 197, 94, 0.12);
+  color: #16A34A;
+}
+
+.product-cta {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--peach);
+  transition: color 0.2s;
+}
+.product-cta:hover { color: var(--peach-dark); }
+
+/* Portfolio */
+.portfolio-visual {
+  position: relative;
+  height: 280px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: linear-gradient(145deg, #FAF7F2 0%, #FFEDE3 100%);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  transition: all 0.3s ease;
+}
+.portfolio-visual--alt {
+  background: linear-gradient(145deg, #F8FAFC 0%, #FAF7F2 100%);
+}
+.portfolio-item:hover .portfolio-visual {
+  box-shadow: 0 24px 56px rgba(15, 23, 42, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Floating WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 60;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.whatsapp-float:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 14px 36px rgba(37, 211, 102, 0.5);
+}
+.whatsapp-float:active { transform: scale(0.96); }
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-float-slow { animation: float 8s ease-in-out infinite; }
+
+/* Focus */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--peach);
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .whatsapp-float {
+    width: 54px;
+    height: 54px;
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+}
